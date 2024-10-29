@@ -8,4 +8,5 @@ Task2: API Automation Testing:
   - workflow dependencies: APIAutomationRequirements.txt
   - demo video: SecondTask_API_Automation_Video.mp4
   - workflow: .github/workflows/API_Automation_Workflow.yml
+      - workflow is auto-triggered upon push/pull.
   - workflow report: report-APIAutomation.html
