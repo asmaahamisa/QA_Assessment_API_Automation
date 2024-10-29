@@ -1,5 +1,4 @@
-# comment
-# trigger the workflow
+# trigger workflow
 name: Run Python Code and Generate Report Second Task API Automation
 
 on:
