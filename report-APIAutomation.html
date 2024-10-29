@@ -1,0 +1,55 @@
+validate that the API successfully returns a list of brands
+<br>
+Status code for get brands is 200: success
+<br>
+List of brands has more than one entry
+<br>
+Each brand object contains _id and name properties
+<br>
+<br>
+<br>
+<br>
+validate that a brand is successfully returned by a specific ID
+<br>
+
+
+Status code is not 200 success for ID:  /6440965fbf61a969820eb749
+<br>
+<br>
+<br>
+<br>
+Validate that the API prevents the creation of duplicate brand entries
+<br>
+
+
+{'error': 'HE-MAN already exists'}
+<br>
+<br>
+<br>
+<br>
+Validate that the API returns an appropriate error when attempting to retrieve a brand that does not exist via the GET /brands/:id request
+<br>
+
+
+Appropriate error, Brand with ID:/6440965fbf61a969820eb749QQQQQQQAAAAAA does not exist
+<br>
+<br>
+<br>
+<br>
+Validate that the API throws an error when attempting to delete a non-existent brand
+<br>
+
+
+Cannot fulfill delete request with ID:/6440965fbf61a969820ivQQQ89ojn3jA ,Brand does not exist
+<br>
+<br>
+<br>
+<br>
+Validate that the API throws an error when attempting to update a non-existent brand
+<br>
+
+
+Unable to update brands
+<br>
+Brand with ID: /6440965ufnfidcr6ndl820ivQQQ89ojn3jA does not exist
+<br>
