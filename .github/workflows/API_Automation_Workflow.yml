@@ -27,7 +27,7 @@ jobs:
       # Step 3: Install dependencies (if you have a SecondTaskRequirements.txt file)
       - name: Install Dependencies
         run: |
-          if [ -f "SecondTaskRequirements.txt" ]; then pip install -r SecondTaskRequirements.txt; fi
+          if [ -f "APIAutomationRequirements.txt" ]; then pip install -r APIAutomationRequirements.txt; fi
 
       # Step 4: Run the Python script
       - name: Run Python Code
@@ -37,12 +37,12 @@ jobs:
       - name: Generate HTML Report
         run: |
           mkdir -p artifacts
-          python API_Automation.py > artifacts/report-SecondTask.html  # Redirect output to an HTML file (customize as needed)
+          python API_Automation.py > artifacts/report-APIAutomation.html  # Redirect output to an HTML file (customize as needed)
 
       # Step 6: Upload the report as an artifact
       - name: Upload HTML Report
         uses: actions/upload-artifact@v4
         with:
-          name: python-report-SecondTask
-          path: artifacts/report-SecondTask.html
+          name: python-report-APIAutomation
+          path: artifacts/report-APIAutomation.html
 
